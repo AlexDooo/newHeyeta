@@ -11,7 +11,7 @@ public class TestController {
 
     @GetMapping
     public String printWelcome(ModelMap model) {
-        String messages = "Hello Docker!!!!!";
+        String messages = "Hello Docker!!!";
         model.addAttribute("messages", messages);
         return "helloDocker";
     }
