@@ -24,18 +24,12 @@ public class User {
     )
     private UUID id;
 
-    @Column(name = "name")
-    private String name;
+    @Column(name = "user_name")
+    private String userName;
 
-    @Column(name = "age")
-    private Long age;
+    @Column(name = "user_age")
+    private Long userAge;
 
     @Column(name = "passport_number")
     private String passportNumber;
-
-    public User(String name, Long age, String passportNumber) {
-        this.name = name;
-        this.age = age;
-        this.passportNumber = passportNumber;
-    }
 }

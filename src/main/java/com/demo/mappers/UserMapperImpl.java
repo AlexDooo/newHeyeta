@@ -17,8 +17,8 @@ public class UserMapperImpl implements UserMapper {
     @Override
     public UserDto mapToDto(User user) {
         return new UserDto().setId(user.getId())
-                .setName(user.getName())
-                .setAge(user.getAge())
+                .setName(user.getUserName())
+                .setAge(user.getUserAge())
                 .setPassportNumber(user.getPassportNumber());
     }
 

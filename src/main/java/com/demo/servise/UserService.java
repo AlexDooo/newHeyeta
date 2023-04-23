@@ -19,7 +19,7 @@ public class UserService {
 
     public Set<UserDto> getUsersDto() {
         return userMapper.mapToSetDto(userRepo.findAll().stream()
-                .filter(user -> user.getAge() >= 18)
+                .filter(user -> user.getUserAge() >= 18)
                 .collect(Collectors.toList()));
     }
 }
