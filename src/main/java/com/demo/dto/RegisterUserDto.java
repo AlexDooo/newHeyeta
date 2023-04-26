@@ -4,17 +4,12 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
-
 @Getter
 @Setter
 @Accessors(chain = true)
-public class UserDto {
+public class RegisterUserDto {
 
-    private Long id;
+    private String userName;
 
-    private String name;
-
-    private Long age;
-
-    private String passportNumber;
+    private String password;
 }
