@@ -66,7 +66,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User findById(Long userId) {
+    public UserDto findById(Long userId) {
         var user = userRepo.findById(userId);
 
         if (user.isEmpty()) {
@@ -74,7 +74,7 @@ public class UserServiceImpl implements UserService {
             return null;
         }
         log.info("IN findById - user {} found by user id {}", user, userId);
-        return user.get();
+        return userMapper.mapToDto(user.get());
     }
 
     @Override

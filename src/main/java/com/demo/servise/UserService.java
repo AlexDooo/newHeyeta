@@ -11,9 +11,9 @@ public interface UserService {
 
     Set<UserDto> getUsersDto();
 
-    Object finByUserName(String userName);
+    User finByUserName(String userName);
 
-    User findById(Long userId);
+    UserDto findById(Long userId);
 
     void deleteUser(Long id);
 }
